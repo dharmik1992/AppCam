@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppCam</string>
+    <string name="map_api_key">AIzaSyAdaKFdBVf4exAC7ERWkXZLqrT2RZEcC58</string>
+    <string name="no_data_msg">No Photos Found</string>
+</resources>

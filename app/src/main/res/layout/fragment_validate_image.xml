@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_action_layout"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/errormessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Review the Font"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/size_20dp" />
+
+            <TextView
+                android:id="@+id/errortitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:text="Before proceeding make sure that the data on the image is not blurred and entirely visible to you. Click retake if you want to upload the image again."
+                android:textColor="#8F8F8F"
+                android:textSize="@dimen/size_14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/size_30dp"
+                    android:contentDescription=""
+                    android:scaleType="fitXY"
+                    android:src="@drawable/defaultplaceholder" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_20dp">
+
+        <Button
+            android:id="@+id/btn_Retake"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_gray"
+            android:text="Retake"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_green"
+            android:text="Next"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+</RelativeLayout>

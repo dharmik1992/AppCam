@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#000"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+   
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/defaultplaceholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Name "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/txt_filename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="data"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Size "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/txt_filesize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="data"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Timestamp "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/txt_timestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="data"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Latitude "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/txt_latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="data"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Longitude "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/txt_longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="data"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="Path "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/txt_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="data"
+                    android:gravity="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_map"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/size_8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/staticmap" />
+    </LinearLayout>
+</ScrollView>

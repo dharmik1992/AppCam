@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_surface_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_above="@+id/make_photo_button"
+            android:id="@+id/rl_mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SurfaceView
+                android:id="@+id/camera_preview_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <View
+                android:id="@+id/border_camera"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border"
+                />
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/make_photo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/size_30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_camera_capture_pressed"
+
+           />
+    </RelativeLayout>
+</RelativeLayout>
